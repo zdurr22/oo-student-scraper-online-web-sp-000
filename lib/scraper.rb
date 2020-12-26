@@ -13,7 +13,7 @@ class Scraper
       student_info = {
         :name => student.css("h4").text,
         :location => student.css("p.student-location").text,
-        :profile_url => student.css("a").first["href"]
+        :profile_url => student.css("a")[0]["href"]
       }
       student_info_array << student_info
     end
@@ -41,3 +41,4 @@ class Scraper
   end
 
 end
+binding.pry

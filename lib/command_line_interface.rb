@@ -40,4 +40,3 @@ class CommandLineInterface
   end
 
 end
-binding.pry
